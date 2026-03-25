@@ -1,0 +1,458 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "374edc52-4db7-4989-81bb-98721c39e57e",
+   "metadata": {},
+   "source": [
+    "# 1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "5eebf440-3c87-4804-b802-d8d58f11b954",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Digite sua idade:  12\n",
+      "Esta com ingreso sim\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Entrada liberada\n"
+     ]
+    }
+   ],
+   "source": [
+    "idade = int(input (\"Digite sua idade: \"))\n",
+    "if idade >=12:\n",
+    "    tem_ingresso= input(\"Esta com ingreso\")\n",
+    "    if tem_ingresso== \"sim\":\n",
+    "        print(\"Entrada liberada\")\n",
+    "    else:\n",
+    "        print(\"Precisa comprar ingresso!\")\n",
+    "else:\n",
+    "    print(\"Idade insuficiente!\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2fe12ff6-74ec-4f7c-9088-e077556b0324",
+   "metadata": {},
+   "source": [
+    "2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "cb99b1fc-37a1-479c-b769-6241df49a91c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Digite seu nome:  rafael\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Usuario invalido\n"
+     ]
+    }
+   ],
+   "source": [
+    "nome = input (\"Digite seu nome: \")\n",
+    "if nome== \"admin\":\n",
+    "    senha_usuario = int(input(\"Digite sua senha\"))\n",
+    "    if senha_usuario == 1234:\n",
+    "        print(\"Acesso permitido\")\n",
+    "    else:\n",
+    "        print( \"Senha incorreta\")\n",
+    "else:\n",
+    "    print (\"Usuario invalido\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0b3ea93d-8c73-4d91-b48c-14fd5df9ab94",
+   "metadata": {},
+   "source": [
+    "3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "27dba5ed-90fb-4d94-b2ef-c281d4677dcb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Digite sua nota:  9\n",
+      "Digite sua frequencia:  78\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Aprovado\n"
+     ]
+    }
+   ],
+   "source": [
+    "nota = int (input (\"Digite sua nota: \"))\n",
+    "if nota >=7:\n",
+    "    frequencia_aluno = int(input (\"Digite sua frequencia: \"))\n",
+    "    if frequencia_aluno >=75:\n",
+    "        print (\"Aprovado\")\n",
+    "    else:\n",
+    "        print(\"Reprovado por falta\")\n",
+    "else:\n",
+    "    print(\"Reprovado por nota\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "eb056f55-c761-4006-9c41-af8c3b114005",
+   "metadata": {},
+   "source": [
+    "4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "1462460d-d114-4e0c-88dd-2e870e594fe7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Digite um numero inteiro:  4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Par positivo\n"
+     ]
+    }
+   ],
+   "source": [
+    "num = int(input(\"Digite um numero inteiro: \"))\n",
+    "if num >0:\n",
+    "    if num %2==0:\n",
+    "        print(\"Par positivo\")\n",
+    "    else:\n",
+    "        print(\"Impar positivo\")\n",
+    "else:\n",
+    "\n",
+    "    print (\"Numero nao positivo\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c8bb4241-200c-4aff-a647-1a1440f7dd20",
+   "metadata": {},
+   "source": [
+    "5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "386e41f5-1c6b-4d8a-9030-0dd5b59a908b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Digite sua idade:  18\n",
+      "Esta com documento sim\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Pode entrar\n"
+     ]
+    }
+   ],
+   "source": [
+    "idade = int(input (\"Digite sua idade: \"))\n",
+    "if idade >=16:\n",
+    "    tem_documento= input(\"Esta com documento\")\n",
+    "    if tem_documento == \"sim\":\n",
+    "        print(\"Pode entrar\")\n",
+    "    else:\n",
+    "        print(\"Precisa apresentar documento\")\n",
+    "else:\n",
+    "    print(\"Entrada nao permitida!\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a2eca266-c480-44f3-8dbb-76fb0f86804a",
+   "metadata": {},
+   "source": [
+    "6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "1ac1c640-2c38-46b9-871a-9f09a49e0a28",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Digite o valor:  300\n",
+      "Possui cupom? (sim/nao) sim\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Desconto aplicado\n"
+     ]
+    }
+   ],
+   "source": [
+    "valor_compra = int(input(\"Digite o valor: \"))\n",
+    "if valor_compra >=100:\n",
+    "    tem_cupom= input(\"Possui cupom? (sim/nao)\")\n",
+    "    if tem_cupom == \"sim\":\n",
+    "        print(\"Desconto aplicado\")\n",
+    "    else:\n",
+    "        print(\"Sem desconto\")\n",
+    "else:\n",
+    "    print(\"Valor insuficiente para desconto\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "862ffd79-d975-4981-b441-c78bb0761f44",
+   "metadata": {},
+   "source": [
+    "7)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "d50c8c84-1d0a-40f1-807b-ffbb200ca3f2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Digite um numero inteiro:  2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "O numero é multiplo de 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "num = int(input(\"Digite um numero inteiro: \"))\n",
+    "if num >0:\n",
+    "    if num %2==0 and num %3==0:\n",
+    "        print(\"O numero é multiplo de 2 e de 3\")\n",
+    "    elif num %2==0:\n",
+    "        print(\"O numero é multiplo de 2\")\n",
+    "    elif num %3==0:\n",
+    "        print(\"O numero é multiplo de 3\")\n",
+    "else:\n",
+    "    print(\"O numero nao é positivo\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "76bafef3-f09a-45df-ba57-170073cb339d",
+   "metadata": {},
+   "source": [
+    "8)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "28eeb93a-f505-4c6d-a9b8-5bc8bec7fab6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Digite seu nome:  rafael\n",
+      "Qual sua idade?:  18\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Cadastro completo\n"
+     ]
+    }
+   ],
+   "source": [
+    "nome = input (\"Digite seu nome: \")\n",
+    "if nome.strip ():\n",
+    "    idade = int(input (\"Qual sua idade?: \"))\n",
+    "    if idade >=18:\n",
+    "        print(\"Cadastro completo\")\n",
+    "    else:\n",
+    "        print( \"Cadastro incompleto: menor de idade\")\n",
+    "elif not nome.strip():\n",
+    "    print(\"Nome obrigatório\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "92f5673d-bc53-4b3a-95ab-bd24dd5d6c5f",
+   "metadata": {},
+   "source": [
+    "9)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "6cad34c1-9f6f-4a3a-8159-f46e5db45ea1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Digite sua idade:  60\n",
+      "Está com dor forte (sim/nao)?  sim\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Atendimento prioritário\n"
+     ]
+    }
+   ],
+   "source": [
+    "idade = int(input(\"Digite sua idade: \"))\n",
+    "if idade >=60:\n",
+    "    dor_forte = input(\"Está com dor forte (sim/nao)? \")\n",
+    "    if dor_forte == \"sim\":\n",
+    "        print(\"Atendimento prioritário\")\n",
+    "    else:\n",
+    "        print(\"Aguardar triagem\")\n",
+    "else:\n",
+    "    print(\"Atendimento comum\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9c1b6a4b-b528-4b12-a8e6-1e0352f05372",
+   "metadata": {},
+   "source": [
+    "10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "dbfc893c-56da-487c-b561-0685fe519532",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Digite o usuario:  professor\n",
+      "Digite sua senha:  python123\n",
+      "Digite o nivel de acesso:  2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Acesso avancado\n"
+     ]
+    }
+   ],
+   "source": [
+    "usuario = input(\"Digite o usuario: \")\n",
+    "if usuario == \"professor\":\n",
+    "    senha_usuario = input(\"Digite sua senha: \")\n",
+    "    if senha_usuario == \"python123\" :\n",
+    "        nivel_de_acesso = int(input(\"Digite o nivel de acesso: \"))\n",
+    "    if nivel_de_acesso == 1: \n",
+    "        print(\"Acesso básico\")\n",
+    "    elif senha_usuario != \"python123\":\n",
+    "        print(\"Senha inválida\")\n",
+    "\n",
+    "    else:\n",
+    "        print(\"Acesso avancado\")\n",
+    "\n",
+    "elif usuario != \"professor\":\n",
+    "    print(\"usuario nao autorizado\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bce066e4-eacb-41fc-8e87-cb26e70ca656",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.14.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
